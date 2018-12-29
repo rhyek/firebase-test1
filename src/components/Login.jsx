@@ -13,7 +13,7 @@ const config = {
   messagingSenderId: '830827029264',
 };
 
-const app = firebase.initializeApp(config);
+firebase.initializeApp(config);
 
 export default class Login extends React.Component {
   state = {
@@ -41,7 +41,7 @@ export default class Login extends React.Component {
       email,
       password,
     });
-    await app.auth().signInWithCustomToken(customToken);
+    await firebase.auth().signInWithCustomToken(customToken);
     console.log('logged in :)');
   };
 
