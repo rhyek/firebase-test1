@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/functions/node_modules
+/functions/lib
+/functions/index.js
+/functions/src/credentials.json

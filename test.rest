@@ -1,0 +1,19 @@
+
+
+POST http://localhost:5001/test1-19ab7/us-central1/api/user/login HTTP/1.1
+content-type: application/json
+
+{
+  "email": "carlos.rgn@gmail.com",
+  "password": "123456"
+}
+
+###
+
+POST https://us-central1-test1-19ab7.cloudfunctions.net/api/user/login HTTP/1.1
+content-type: application/json
+
+{
+  "email": "carlos.rgn@gmail.com",
+  "password": "123456"
+}
